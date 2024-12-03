@@ -21,6 +21,18 @@ app.get('/youtube' , (req, res) =>{
     res.send('<h2> go to youtube</h2>')
 })
 
+const githubData ={
+  "username" : "SouravKumarJana",
+  "email" : "souravkumarjana111@gmail.com",
+  "url" : "http:github.com/user/SouravKumarJana",
+  "avater Url" : " ",
+  "gits url" : " ",
+  "subscriptions" : ""
+}
+
+app.get("/github", (req, res) =>{
+  res.json(githubData)
+})
 
 app.listen(process.env.PORT, () => {                                //Server listining 
   console.log(`Example app listening on port ${port}`)
